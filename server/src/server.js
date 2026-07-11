@@ -4,6 +4,8 @@ dotenv.config();
 import app from "./app.js";
 import connectDB from "./config/db.js";
 import logger from "./utils/logger.js";
+import dns from "dns"
+dns.setServers(['8.8.8.8', '1.1.1.1']);
 
 const PORT = process.env.PORT || 8888;
 
